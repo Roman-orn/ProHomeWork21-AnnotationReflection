@@ -25,7 +25,7 @@ public class ArrayUtils {
 
     @Author(name = "John", surname = "Smith")
     @MethodInfo(name = "print", returnType = "void")
-    public void print(String[] array) {
+    public static void print(String[] array) {
         for (String item : array) {
             System.out.println(item + ", ");
         }

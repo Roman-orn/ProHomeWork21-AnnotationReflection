@@ -21,10 +21,10 @@ public class Main {
 
         System.out.println("***Annotation***");
         Method method = ArrayUtils.class.getDeclaredMethod("print", String[].class);
-        MethodInfo methodInfoAnnotation = method.getAnnotation(MethodInfo.class);
+        MethodInfo methodInfo = method.getAnnotation(MethodInfo.class);
         Author author = method.getAnnotation(Author.class);
-        System.out.println("Method name: " + methodInfoAnnotation.name());
-        System.out.println("Return type: " + methodInfoAnnotation.returnType());
+        System.out.println("Method name: " + methodInfo.name());
+        System.out.println("Return type: " + methodInfo.returnType());
         System.out.println("Author name: " + author.name());
         System.out.println("Author surname: " + author.surname());
     }
